@@ -56,9 +56,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'float-slow': 'float 8s ease-in-out infinite',
-        'gradient-x': 'gradient-x 3s ease infinite',
+        'float': 'float 3s ease-in-out infinite',
+        'float-slow': 'float 6s ease-in-out infinite',
+        'gradient-x': 'gradient-x 15s ease infinite',
+        'spin-slow': 'spin 8s linear infinite',
       },
       keyframes: {
         float: {
