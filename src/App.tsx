@@ -8,6 +8,7 @@ import { ImageCarousel } from './components/ImageCarousel';
 import { IoArrowBack } from 'react-icons/io5';
 import CTASection from "./components/CTA-section";
 import LoadingButton from "./components/LoadingButton";
+import FallingCoinsAnimation from "./components/FallingCoinsAnimation";
 
 const REGISTER_URL =
   "https://sportsbet.bet.ar/registrarse?utm_source=publi1lauguty&utm_brandaffiliate=publi1lauguty";
@@ -147,6 +148,9 @@ function App() {
            */}
         </div>
       </motion.nav>
+
+      {/* Falling Coins Animation Layer */}
+      <FallingCoinsAnimation />
 
       {/* Decorative Background Elements */}
        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-40">

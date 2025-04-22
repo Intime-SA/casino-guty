@@ -5,7 +5,7 @@ import { GiPokerHand } from "react-icons/gi"
 import LoadingButton from "./LoadingButton" // Asumiendo que este componente existe
 
 // URL de registro (asumiendo que está definido en otro lugar)
-const REGISTER_URL = "/registro" // Reemplaza con tu URL real
+const REGISTER_URL = "https://pba.sportsbet.bet.ar//registrarse?utm_source=publi1lauguty&utm_brandaffiliate=publi1lauguty" // Reemplaza con tu URL real
 
 // Animaciones
 const staggerContainer = {
