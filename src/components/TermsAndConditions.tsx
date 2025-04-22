@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { GiScrollQuill } from 'react-icons/gi';
 import { IoArrowBack } from 'react-icons/io5';
@@ -23,6 +23,12 @@ interface TermsAndConditionsProps {
 }
 
 export const TermsAndConditions: React.FC<TermsAndConditionsProps> = ({ onBack }) => {
+
+  // Scroll to top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array ensures this runs only once on mount
+
   return (
     <motion.div
       initial="hidden"
