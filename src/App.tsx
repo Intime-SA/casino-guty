@@ -170,7 +170,7 @@ function App() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
-        className="fixed w-full flex justify-between items-center px-4 md:px-8 py-3 md:py-4 bg-gradient-to-b from-[#1a1a1a]/95 to-[#212121]/80 backdrop-blur-md z-50 border-b border-brand-green/10 shadow-lg"
+        className="fixed w-full flex justify-center sm:justify-between items-center px-4 md:px-8 py-3 md:py-4 bg-gradient-to-b from-[#1a1a1a]/95 to-[#212121]/80 backdrop-blur-md z-50 border-b border-brand-green/10 shadow-lg"
       >
         <motion.div className="flex items-center" whileHover={{ scale: 1.05 }}>
           <img
@@ -182,26 +182,18 @@ function App() {
         <div className="flex items-center space-x-3 md:space-x-4">
           <button
             onClick={() => setShowTerms(true)}
-            className="text-white/80 hover:text-brand-green transition-colors duration-200 text-sm md:text-base px-3 py-1 hidden sm:block" // Hide on extra small screens
+            className="text-white/80 hover:text-brand-green transition-colors duration-200 text-sm md:text-base px-3 py-1 hidden sm:block"
           >
             Bases y Condiciones
           </button>
+          
           <LoadingButton
             href={REGISTER_URL}
-            className="px-6 py-2 text-sm md:text-base hover:text-[white]" // Smaller button
+            className="px-4 py-2 text-sm md:text-base hover:text-[white] sm:block hidden" // Smaller button
             variant="primary"
           >
-            R e g i s t r a r s e
+            Registrarse
           </LoadingButton>
-          {/* Optional: Add Login button if needed
-           <LoadingButton
-            href={"#"} // Add Login URL
-            className="px-4 py-2 text-sm md:text-base"
-            variant="secondary"
-           >
-             Ingresar
-           </LoadingButton>
-           */}
         </div>
       </motion.nav>
 
