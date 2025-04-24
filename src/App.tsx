@@ -28,6 +28,7 @@ import {
   FaGift,
   FaMobileAlt,
   FaRegIdCard,
+  FaUserPlus,
 } from "react-icons/fa";
 import { TermsAndConditions } from "./components/TermsAndConditions";
 import { ImageCarousel } from "./components/ImageCarousel";
@@ -192,7 +193,8 @@ function App() {
             className="px-4 py-2 text-sm md:text-base hover:text-[white] sm:block hidden" // Smaller button
             variant="primary"
           >
-            Registrarse
+            <FaUserPlus className="text-lg mr-1" />
+            R e g i s t r a r s e
           </LoadingButton>
         </div>
       </motion.nav>
