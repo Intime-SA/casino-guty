@@ -174,9 +174,9 @@ function App() {
       >
         <motion.div className="flex items-center" whileHover={{ scale: 1.05 }}>
           <img
-            src="https://sportsbet.bet.ar/img/landing/Sportsbet.png" // Consider updating the logo if needed
+            src="/Logo-1.png" // Consider updating the logo if needed
             alt="Sportsbet Logo"
-            className="h-10 md:h-14" // Adjusted height
+            className="h-16 md:h-20" // Adjusted height
           />
         </motion.div>
         <div className="flex items-center space-x-3 md:space-x-4">
@@ -188,10 +188,10 @@ function App() {
           </button>
           <LoadingButton
             href={REGISTER_URL}
-            className="px-4 py-2 text-sm md:text-base" // Smaller button
+            className="px-6 py-2 text-sm md:text-base hover:text-[white]" // Smaller button
             variant="primary"
           >
-            Registrarse
+            R e g i s t r a r s e
           </LoadingButton>
           {/* Optional: Add Login button if needed
            <LoadingButton
